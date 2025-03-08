@@ -75,9 +75,6 @@ class Exponential_Distribution(Continuous_Distributions):
         self.y_new=expon.pdf(self.x,self.new_lambda)
         self.graph_line.set_ydata(self.y_new)
 
-def gamma_pdf(x,k,t):
-    return (x**(k-1) * np.exp(-x/t)) / (t**k * sp.gamma(k))
-
 class Gamma_Distribution(Continuous_Distributions):
     def __init__(self,kappa=2,theta=1):
         super().__init__('Gamma Distribution')
@@ -105,4 +102,3 @@ class Gamma_Distribution(Continuous_Distributions):
 
         self.new_y=gamma.pdf(self.x,a=self.new_kappa,scale=self.new_theta)
         self.graph_line.set_ydata(self.new_y)
-
