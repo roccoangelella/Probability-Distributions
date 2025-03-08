@@ -143,4 +143,3 @@ class Generalized_Pareto_Distribution(Continuous_Distributions):
         self.new_y=genpareto(self.x,self.new_s,self.new_mu,self.new_sigma)
         self.new_graphline=self.graph_line.set_ydata(self.new_y)
 
-e
