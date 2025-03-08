@@ -1,1 +1,4 @@
-from .distributions import Normal_Distribution,Gamma_Distribution,Exponential_Distribution
+from .distributions import Normal_Distribution,Gamma_Distribution,Exponential_Distribution,Generalized_Pareto_Distribution
+
+a=Generalized_Pareto_Distribution
+plt.show()
